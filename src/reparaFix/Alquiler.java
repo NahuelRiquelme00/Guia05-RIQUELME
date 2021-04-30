@@ -5,13 +5,11 @@ import java.time.temporal.ChronoUnit;
 
 public class Alquiler implements Contratable {
 	
-	//Attributes
 	private Herramienta herramienta;
 	private LocalDate fechaInicio;
 	private LocalDate fechaFin;
 	private LocalDate fechaDevolucion;
 	
-	//Methods
 	public Alquiler(Herramienta herramienta, LocalDate fechaInicio, int cantDias) {
 		this.herramienta = herramienta;
 		this.fechaInicio = fechaInicio;

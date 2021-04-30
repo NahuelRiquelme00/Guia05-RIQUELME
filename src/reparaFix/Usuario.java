@@ -24,7 +24,6 @@ public class Usuario {
 		if(this.alquierNoPermitido()) {
 			throw new AlquilerNoEntregadoException();
 		}
-		//this.herramientrasNoDevueltas++;
 		this.contratos.add(new Alquiler(herramienta, fechaInicio, cantDias));
 	}	
 	
