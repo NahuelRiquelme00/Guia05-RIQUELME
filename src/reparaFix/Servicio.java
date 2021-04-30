@@ -2,8 +2,15 @@ package reparaFix;
 
 public abstract class Servicio {
 	
-	private Oficio oficio;
-	private Boolean urgente;
+	protected Oficio tipo;
+	protected boolean urgente;
 	
-
+	public boolean esUrgente(){
+		return urgente;
+	}
+	
+	public abstract double costo();
+	
+	public abstract boolean oficioCompatible(Oficio oficio);
+	
 }
